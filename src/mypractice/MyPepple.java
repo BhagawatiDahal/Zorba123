@@ -9,6 +9,10 @@ public class MyPepple {
 		while(i<=5) {
 			System.out.println(i);
 		
+			
+			if (i==3) {
+				break;
+			}
 		i++;
 	}
 
