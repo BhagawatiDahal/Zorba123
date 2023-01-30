@@ -8,7 +8,12 @@ public class MyPractice {
 		System.out.println("Hello World");
 		System.out.println(" I am good");
 		System.out.println("hello");
+		System.out.println("I am");
 
 	}
 
+	
+	
+	
+	
 }
