@@ -11,7 +11,7 @@ public class MyPepple {
 		
 			
 			if (i==3) {
-				break;
+				continue;
 			}
 		i++;
 	}
