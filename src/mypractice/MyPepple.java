@@ -20,6 +20,6 @@ public class MyPepple {
 			System.out.println(j);
 		}
 		
-
+String name="bhagwati";
 }
 }
