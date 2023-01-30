@@ -16,6 +16,10 @@ public class MyPepple {
 			}
 		i++;
 	}
+		for(int j=5; j<=10; j++) {
+			System.out.println(j);
+		}
+		
 
 }
 }
