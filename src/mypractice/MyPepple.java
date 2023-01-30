@@ -21,6 +21,6 @@ public class MyPepple {
 		}
 		
 String name="bhagwati";
-String name2="Ram";
+String name2="Rameshower";
 }
 }
