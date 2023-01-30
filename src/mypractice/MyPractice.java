@@ -6,6 +6,7 @@ public class MyPractice {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Hello World");
+		System.out.println(" I am good");
 
 	}
 
