@@ -7,7 +7,7 @@ public class Mynext {
 
 	System.out.println("Java");	
 		
-		
+		System.out.println("Property");
 	}
 
 }
