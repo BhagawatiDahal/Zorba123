@@ -20,7 +20,7 @@ public class MyPepple {
 			System.out.println(j);
 		}
 		
-String name="bhagwati";
-String name2="Rameshower";
+//String name="bhagwati";
+//String name2="Rameshower";
 }
 }
