@@ -12,11 +12,11 @@ public class ReverseString {
 	System.out.println(name1);
 	
 	
-//	
-//	for (int i=9; i>=0; i-- ){
-//		System.out.println(i);
-//	}
-//	
+	
+	for (int i=9; i>=0; i-- ){
+		System.out.println(i);
+	}
+	
 	
 	for (int i=8;i>=0; i--) {
 		
