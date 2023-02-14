@@ -84,8 +84,8 @@ public class MyPractice {
 				// reverse the string
 		
 				
-				String phone= "Iphone";
-				String ph="";
+		//		String phone= "Iphone";
+			//	String ph="";
 				
 				//char c= phone.charAt(5);
 				{
@@ -94,7 +94,7 @@ public class MyPractice {
 				}
 				//Write string
 				
-				int len= phone.length();
+		//	int len= phone.length();
 				
 				{
 				//System.out.println(len);
@@ -156,49 +156,131 @@ public class MyPractice {
 			// program5
 			// chinmay ----- vowels   "a" , "e" , "i" , "o" , "u"
 			
-			String firstName = "chinmay";
-			int count = 0;
+//			String firstName = "chinmay";
+//			int count = 0;
+//			
+//			
+//			for(int i = 0  ; i < firstName.length() ; i++) {
+//				System.out.println(firstName.charAt(i));
+//				
+//				if(firstName.charAt(i) == 'a' || firstName.charAt(i) == 'e' || firstName.charAt(i) == 'i' || firstName.charAt(i) == 'o' || firstName.charAt(i) == 'u') {
+//					count = count + 1;
+//				}
+//					
+//				
+//			}
+//			
+//			System.out.println(count);
+//			
 			
-			
-			for(int i = 0  ; i < firstName.length() ; i++) {
-				//System.out.println(firstName.charAt(i));
-				
-				if(firstName.charAt(i) == 'a' || firstName.charAt(i) == 'e' || firstName.charAt(i) == 'i' || firstName.charAt(i) == 'o' || firstName.charAt(i) == 'u') {
-					count = count + 1;
-				}
 					
+			// Bhagawati ------vowels a, e, i, o, u
+			String firstName= "Bhagawati";
+			int count=0;		
+			
+			
+			for (int i=0; i<firstName.length();i++) {
+				System.out.println(firstName.charAt(i));
+				
 				
 			}
 			
-			System.out.println(count);
 			
+			String name1= "Sonam";
+			int count1 =0;
 			
+			for(int i=0; i<name1.length(); i++) {
+				
+				System.out.println(name1.charAt(i));
+				
+				if(name1.charAt(i)=='a'|| name1.charAt(i)== 'e' || name1.charAt(i)=='i' || name1.charAt(i)=='o' || name1.charAt(i)== 'u' ){
+					count1=count1+1;
 					
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+				}
 				
+				//System.out.println(count1);
 				
-		
+			}
+			
+			System.out.println(count1);
+			
+			
+			
+			
+
 		
 		// check whether the given number is even or odd
-		// check whether the number is prime
-		// calculate the factorial of given number
+			
+			int a= 5;
+			
+			if ( a% 2 == 0) {
+				System.out.println("The number is even");
+				
+			}else {
+				
+				System.out.println("The number is odd");
+			}
+			
+			
+			
+			
+			
+			
+		// check whether the number is prime: https://www.youtube.com/watch?v=-edAgWN1mQk
+			// divisible by 1 and itself
+		
+			
+		int num= 15;
+		//int count=0; already did on last program
+		//	1,2,3,4,5,6,7	
+		// its divisible by 1 and if self, so count=2
+		
+		
+		for(int i=1; i<=num;i++) {
+			//System.out.println(i);
+			
+			if(num%i==0) {
+				count++;
+			}
+			
+		}
+		
+		if(count==2) {
+			System.out.println("Prime");
+		}else {
+			System.out.println("Not Prime");
+		}
+				
+				
+				
+				
+	// calculate the factorial of given number :https://www.youtube.com/watch?v=MBUGwFXwN-I
 
+	// factorial of 5! = 1*2*3*4*5
+				  
+		
+		int num1=5;
+		
+		int fact=1;
+		
+		
+		for(int i=1;i<=num1;i++) {
+			fact=fact*i;
+		}
+		
+		System.out.println(fact);
+		
 	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 }
 }
