@@ -21,14 +21,14 @@ public class PDay4 {
 	
 		 */
 		
-		System.out.println(33 > 5); // true
-		System.out.println(3 <= 5); // true
-		System.out.println(330 == 5); // true
-		System.out.println(3 < 5); // true
-		System.out.println(33 >= 5);  // true
-		System.out.println(33 == 33); // true
-		
-		
+//		System.out.println(33 > 5); // true
+//		System.out.println(3 <= 5); // true
+//		System.out.println(330 == 5); // true
+//		System.out.println(3 < 5); // true
+//		System.out.println(33 >= 5);  // true
+//		System.out.println(33 == 33); // true
+//		
+//		
 		
 		
 		
@@ -38,6 +38,22 @@ public class PDay4 {
 		// false  &&  false  =========> false
 		
 		
+		
+		Calculator(12,3);
+		Calculator(120,30);
+		Calculator(1200,300);
+	
 	}
+	
+	
+	static void Calculator(int x, int y) {
+		
+		
+		System.out.println(x+y);
+		System.out.println(x-y);
+		
+	}
+	
+	
 
 }

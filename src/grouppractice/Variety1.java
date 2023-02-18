@@ -1,3 +1,4 @@
+package grouppractice;
 
 public class Variety1 {
 
@@ -234,7 +235,7 @@ public class Variety1 {
 				String  firstName11 = "chinmay";
 				char [] ra = firstName11.toCharArray(); //{'c','h','i','n','m','a','y'}
 				for(int i = 0 ; i < ra.length ; i++) {
-					System.out.println(i);
+					//System.out.println(i);
 					System.out.println(ra[i]);
 				}
 				
