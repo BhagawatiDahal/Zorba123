@@ -69,15 +69,18 @@ public class AssignmentDay11 {
 	
 	// show the last five transactions in arrays
 	
-	//icici.transactions = new int[5];
-//	icici.deposit(50);
-//	icici.deposit(200);
-//	icici.deposit(60);
-//	icici.withDrawl(-20);
-//	icici.withDrawl(-50);
+//int transactions[] = new int[5];
+//transactions[0]=icici.deposit(50);
+//transactions[1] =icici.withDrawl(200);
+//transactions[2]=icici.deposit(60);
+//transactions[3]=icici.withDrawl(20);
+//transactions[4]=icici.withDrawl(50);
 //	
 int transactions[] = {icici.deposit(50),icici.deposit(200),icici.deposit(60),icici.withDrawl(-20),
 icici.withDrawl(-50),};
+//int transactions[] = {icici.deposit(50),icici.deposit(200),icici.deposit(60),icici.withDrawl(20),
+//icici.withDrawl(50),};
+//	
 	
 	
 	for ( int i=0; i<transactions.length; i++) {
@@ -127,9 +130,9 @@ class Bank{
 	
 	public int deposit(int amount) {
 		this.amount= amount;
-//		this.bal = this.bal + amount;
-//		System.out.println("Deposit successful");
-//		return this.bal;
+		this.bal = this.bal + amount;
+		System.out.println("Deposit successful");
+		//return this.bal;
 		return amount;
 	}
 	
@@ -145,6 +148,15 @@ class Bank{
 //			return this.bal;
 //		}
 		return amount;
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 	
 	// Assignment
@@ -156,17 +168,6 @@ class Bank{
 	
 	
 	
-
-
-
-
-		
-		
-		
-		
-		
-		
-		
 	}
 
 

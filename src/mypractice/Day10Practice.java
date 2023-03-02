@@ -1,90 +1,108 @@
 package mypractice;
 
+
+
 public class Day10Practice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+	
+		// constructor
+		
+		Human a = new Human();
+		int vli = a.Add();
+		System.out.println(vli);
+		
+		// constructor with parameter
+		
+		Nepal icici = new Nepal(1000,123,"chinmay","current");
+		Nepal sbi = new Nepal (10000,123,"chinmay","current");
+		
+		System.out.println(icici.accName);
+		System.out.println(icici.accNo);
+		System.out.println(icici.bal);
+		System.out.println(icici.type);
+		System.out.println(icici.country);
+		
+		int updatedBal = icici.deposit(1000);
+		System.out.println(updatedBal);
+		// default constructor also
+		//icici.withDrawl(3000);
+		
+		int updatedBal2 = icici.withDrawl(500);
+		System.out.println(updatedBal2);
+		icici.country = "Nepal";
+		
+		//sbi.deposit(5000);
+		int updatedBal3=sbi.deposit(5000);
+		System.out.println(updatedBal3);
+	}
+	
+	
 
-	// vehicle type 
-		
-		
-//		String vehicle ="Audi";
-//		vehicle.toUpperCase();
-//		
-//		String A = vehicle.toUpperCase();
-//		System.out.println("A");
-		
-		
-		
-		// creating instance or object of human class
-		
-		vehicle Audi= new vehicle("audi hybrid", 23456);
-		System.out.println(Audi.Name);
-		
-		Audi.start();
-		Audi.stop();
-		
-		
-		
-		vehicle bmw= new vehicle ("bmwxp", 12234);
-		System.out.println(bmw.RegNO);
-		bmw.start();
-		bmw.start();
-		
-		
-		
-		
+}
+
+class Human {
+	int i = 0;
+	public Human() {
+		System.out.println("Constructor called");
+		i = 5;
+	}
+	
+	public int Add() {
+		return this.i;
 	}
 }
-// outside class another data type
 
 
-
-class vehicle{
+class Nepal{
 	
+	int bal;
+	int accNo;
+	String accName;
+	String type;
+	String country ;
+	int transactions [];
 	
+	public Nepal(int bal, int accNo, String accName , String type) {
+		this.bal = bal; 
+		this.accNo = accNo;
+		this.accName  =accName;
+		this.type = type;
+		this.country = "India";
+		this.transactions = new int[5];
+	}
 	
-	// properties of fields
-	String Name;
-	int RegNO;
+	public int deposit(int amount) {
+		this.bal = this.bal + amount;
+		System.out.println("Deposit successful");
+		return this.bal;
+	}
 	
-	
-	
-	//constructor to set property values, field values
-	
-	public vehicle(String Name, int RegNO) {
-		this.Name= Name;
-		this.RegNO= RegNO;		
-		
+	public int withDrawl(int amount) {
+		if(this.bal > amount) {
+			this.bal = this.bal - amount;
+			return this.bal;
+			
 		}
-	
-	// methods
-	
-	
-	public void start() {
-		
-		System.out.println("I can start");
-		
+		else {
+			System.out.println("In sufficient balance");
+			return this.bal;
+		}
 	}
 	
+	// Assignment
 	
-	public void stop() {
-		
-		System.out.println("I am stopping");
-		
-	}
-	
+	// If the account type is saving  --- interest should  5%
+	// If the account type is current --- interest should  10%
+	// show the last five transactions 
 	
 	
 	
 	
 	
 	
-	
-	}
-
-
-
+}
 
 
 

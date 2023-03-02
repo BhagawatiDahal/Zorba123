@@ -6,13 +6,6 @@ public class Variety1 {
 		// TODO Auto-generated method stub
 
 		
-		String three = "I am learning ";
-		String four = "java !";
-		String five = three.concat(four).concat("Happy learning !");
-		//            "I am learning java"             
-		System.out.println(five);
-		
-		
 	
 		// Program1
 
@@ -45,56 +38,6 @@ public class Variety1 {
 				// Escaspe character
 		
 		
-				String sen1 = "I am learning javascript";
-				boolean result7 = sen1.contains("learning");
-				System.out.println(result7);
-				
-				// Program5
-				String sen2 = "I am learning javascript and javascript is great";
-				String result8 = sen2.replace("j", "K");
-				System.out.println(result8);
-				
-				String result9 = sen2.replaceAll("javascript", "java");
-				System.out.println(result9);
-				
-				
-				String result10 = sen2.replaceFirst("javascript", "java");
-				System.out.println(result10);
-				
-				
-				
-				
-				
-				String city7 = "jaipura";
-				//  0    1    2    3   4   5  6
-				//  j    a    i    p   u   r  a
-				int len = city7.length();
-				System.out.println(len);
-				
-				for(int i = 0 ; i < len ; i++) { //1 // 2 // 3 // 4 // 5 // 6
-					//System.out.println(i); 
-					System.out.println(city7.charAt(i));
-						
-	}
-				
-				
-				String country = "nepal"; 
-				String rev  = "";
-				
-				for(int i = 0 ; i < country.length() ; i++) {
-					//System.out.println(i);
-					//System.out.println(country.charAt(i));
-					
-					rev = country.charAt(i) + rev;
-					System.out.println(rev);
-					//	        "n"         + ""     =====> n
-					//          "e"         + "en"   =====> en
-					//          "p"         + "pen"   =====> pen
-					//          "a"         + "apen"  ======> apen
-					//          "l"         + "lapen"  ======>lapen
-				}
-				
-				System.out.println(rev);
 				
 				// program 4
 				String fruits = "apple mango banana grapes papaya";
@@ -111,19 +54,261 @@ public class Variety1 {
 				
 				String firstName = "chinmay";
 				int count = 0;
-				
-				
 				for(int i = 0  ; i < firstName.length() ; i++) {
 					System.out.println(firstName.charAt(i));
 					
 					if(firstName.charAt(i) == 'a' || firstName.charAt(i) == 'e' || firstName.charAt(i) == 'i' || firstName.charAt(i) == 'o' || firstName.charAt(i) == 'u') {
 						count = count + 1;
-					}
-						
+					}	
+				}
+				System.out.println(count);
+				
+			//---------------------------------
+				String fruit = "applep";
+				int a = fruit.indexOf('p', 3);
+				System.out.println(a);
+				
+				int count1 = 0;
+				for (int i = 0; i < fruit.length(); i++) {
+
+					if (fruit.charAt(i) == 'p') {
+						System.out.println(i);
+						count1 = count1 + 1;
+						}
+				}
+				System.out.println(count);
+				//--------------------------------------
+				
+				String cities [] = new String[3];
+				cities[0] = "pune";
+				cities[1] = "bangalore";
+				cities[2] = "nagpur";
+				
+				for(int i = 0 ; i < cities.length ; i++) {
+					//System.out.println(i);
+					System.out.println(cities[i]);
+				}
+				
+			//------------------------------------------------	
+				String e = "I am learning java";
+				String ra2 [] = e.split(" ");
+				String ra3 [] = e.split("a");
+				
+				//{"I","am","learning","java"}
+				//{"I ","m le","rning ","j","va"}
+			
+				for(int i = 0 ; i < ra2.length ; i++) {
+					//System.out.println(i);
+					System.out.println(ra2[i]);
+				}	
+			//----------	
+				
+
+				int[] numbersb = new int[3];
+				numbersb[0] = 11;
+				numbersb[1] = 22;
+				numbersb[2] = 33;
+
+				// 0 1 2
+				// [11,22,33]
+
+				int sum = 0;
+
+				for (int i = 0; i < numbersb.length; i++) {
+					// System.out.println(i);
+					// System.out.println(numbersb[i]);
+
+					sum = sum + numbersb[i];
+					// 0 + 11 =======> 11
+					// 11 + 22 =======> 33
+					// 33 + 33 ========>66
+				}
+
+				System.out.println(sum);
+				
+				
+				
+			//---------------------------------------	
+				
+				String citiName = "Nagpur";
+				// ['N','a','g','p','u','r']
+				char  bb [] = citiName.toCharArray();
+				
+				//System.out.println(bb);// y not reference
+			
+				for(int i = 0 ; i < bb.length ; i++) {
+					System.out.println(bb[i]);
+				}	
+				
+				
+				//-------------------------
+				
+				//for each loop
+
+				// program 4
+				int age [] = {2,11,22,33};
+				System.out.println("for -each loop");
+				
+				for(int ab:age) {
+					System.out.println(ab);
+				}
+				
+				// javascript --- for , map()
+				
+				String [] namesi = {"amol","ram","sachin","satish"};
+				for(String s:namesi) {
+					System.out.println(s);
+				}
+				
+				char [] nn = {'a','m','o','l'};
+				String rev = "";
+				// amol
+				for(char i:nn) {
+					rev = rev + i;
+				}
+				System.out.println(rev);
+				
+				
+				// program 5
+				
+				int numbersc [] = {3,44,55,66,77,88,9,44};
+				// sum and average
+				
+				int suma = 0;
+				float avg =0;
+				
+				for(int a1:numbersc) {
+					suma = suma + a1;
+				}
+				
+				System.out.println(suma);
+				avg = suma/numbersc.length;
+				System.out.println(avg);
+				
+				
+				
+				
+			//----------------------------
+				
+
+				int [][] a1 = {
+						{1,22,333},
+						{4444,55555,666666,7777777},
+						{88888888}		 
+				};
+				
+				
+				System.out.println(a1[0][2]); // 3
+				System.out.println(a1[1][3]);  // 7
+				System.out.println(a1[2][0]);// 8
+				
+				for(int i = 0 ; i < a1.length; i++) {
+						//System.out.println(i);
+					    //System.out.println(a1[i].length);
+						int[] r= a1[i];
+						for(int j = 0 ; j < r.length ; j++) {
+							System.out.println(r[j]);
+						}
 					
 				}
 				
-				System.out.println(count);
+		//---------------------		
+				int numbersB [] = {11,22,33};
+				for(int q1:numbersB) {
+					System.out.println(q1);
+				}
+				
+				
+		//-------------------------------
+				
+				
+				int numbersC [][] = {
+						{1,2,3},
+						{4,5,6},
+						{7,8,9}	
+				} ;
+				
+				for(int [] q1:numbersC) {
+					//System.out.println(q1);
+					//System.out.println(Arrays.toString(q1));
+					for(int q2:q1) {
+						System.out.println(q2);
+					}
+				}
+				
+				
+				
+				//--------------------------
+				
+				
+				
+				int ccc [][][] = new int [3][3][3];
+				
+				ccc[0][0][0] = 1;
+				ccc[0][0][1] = 2;
+				ccc[0][0][2] = 3;
+				
+				ccc[0][1][0] = 11;
+				ccc[0][1][1] = 22;
+				ccc[0][1][2] = 33;
+				
+				ccc[0][2][0] = 111;
+				ccc[0][2][1] = 222;
+				ccc[0][2][2] = 333;
+				
+				//-----------------------------------------------------------
+				ccc[1][0][0] = 1111;
+				ccc[1][0][1] = 2222;
+				ccc[1][0][2] = 3333;
+				
+				ccc[1][1][0] = 111;
+				ccc[1][1][1] = 222;
+				ccc[1][1][2] = 333;
+				
+				ccc[1][2][0] = 1;
+				ccc[1][2][1] = 2;
+				ccc[1][2][2] = 3;
+				
+				//
+				
+				ccc[2][0][0] = 1111;
+				ccc[2][0][1] = 2222;
+				ccc[2][0][2] = 3333;
+				
+				ccc[2][1][0] = 111;
+				ccc[2][1][1] = 222;
+				ccc[2][1][2] = 333;
+				
+				ccc[2][2][0] = 1;
+				ccc[2][2][1] = 2;
+				ccc[2][2][2] = 3;
+				
+				
+				for(int i = 0 ; i < ccc.length ; i++) {
+					System.out.println(ccc[i]);
+					int cc [][] = ccc[i];
+					for(int j = 0 ; j < cc.length ; j++) {
+						//System.out.println(cc[j]);
+						int c [] =cc[j];
+						for(int l = 0 ; l < c.length ; l++) {
+							System.out.println(c[l]);
+						}
+					}
+				}
+				
+				for(int [][] qq:ccc) {	
+					for(int [] q:qq) {
+						for(int qr:q) {
+							System.out.println(qr);
+						}
+					}
+				}
+				
+				
+				
+				
+				//---------
+				
 				
 				
 				
@@ -177,8 +362,8 @@ public class Variety1 {
 				//String city7 = "samay";
 				// 0 1 2 3 4 5
 				// s a m a y a
-				int q6 = city7.indexOf("a", 4);
-				System.out.println(q6);
+				int qq6 = city6.indexOf("a", 4);
+				System.out.println(qq6);
 
 				String city8 = "samaya dani";
 
